@@ -1,0 +1,486 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    font-family: 'IRANSans';
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-align: left;
+    direction: ltr;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+ {
+    margin: 0;
+    font-family:'IRANSans-bold';
+}
+
+ul{
+    margin-bottom: 0!important;
+}
+
+html,
+body {
+    direction: ltr;
+    overflow-x: hidden;
+    font-size: 12px;
+    color: #1c1b1b;
+}
+body{
+    height: 100%;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+
+li {
+    list-style: none;
+}
+
+p {
+    text-align: justify;
+    color: #1c1b1b;
+    line-height: 30px;
+}
+
+.container {
+    clear: both;
+    /*margin-top: 10px;*/
+}
+
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12 {
+    float: right;
+}
+
+.th1{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.th2{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/*general css*/
+.btn-theme {
+    color: #fff;
+    background: #c4082f;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.inquire{
+    float: right;
+}
+/*header*/
+header {
+    position: fixed;
+    width: 100%;
+}
+.top-header {
+    background: #000000;
+    color: #fff;
+    padding: 5px 1rem;
+}
+
+.top-header h1 {
+    display: inline;
+    font-size: 14px;
+}
+
+
+
+/*main-menu*/
+.header-menu {
+    background: rgba(0, 0, 0, 0.4);
+}
+nav.main-menu ul li {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    
+}
+nav.main-menu ul li a{
+color: #fff;
+}
+
+/*slider*/
+.slider-over-flow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    background-color: rgba(236, 242, 245, 0.8);
+    padding:20px 50px;
+    text-align: center;
+}
+
+.slider-over-flow h1 ,.slider-over-flow h2{
+    color: #414042;
+}
+
+.slider-btn {
+    margin: 0 auto;
+    display: block;
+    width: 135px;
+    margin-top: 20px;
+}
+
+/* /section2 our tours/ */
+.p-100{
+    padding: 70px;
+}
+.our-tour h1::after{
+    content: '';
+    width: 20%;
+    border: 1px solid red;
+
+}
+
+.tour {
+    height: 275px;
+    position: relative;
+    margin: 10px auto;
+}
+
+.tour-info {
+    background: rgba(82, 84, 86, 0.5);
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    transition: all .7s;
+}
+
+.tour:hover .tour-info{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(143, 27, 77, 0.6);
+}
+
+.tour:hover .tour-info h1{
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+}
+.tour:hover .tour-info h2{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+/*places to go*/
+.places-go {
+    
+    background-image: linear-gradient(to bottom,#eba022 75%, #dbdbdb 25%);
+}
+
+.place-go img {
+    width: 100%;
+    height: 308px;
+}
+.place-go {
+    border: 4px solid #fff;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 5px 3px #a5a5a5e3;
+    transition: all .7s;
+}
+
+.place-go:hover .place-info h1{
+    color: #c4082f;
+}
+
+.place-go:hover{
+    border-bottom: 4px solid #c4082f
+
+}
+
+/*comments*/
+.avatar{
+    position: relative;
+}
+
+.comment-icon{
+    position: absolute;
+    width: ;
+    height: ;
+    bottom: 0;
+    left: 0;
+}
+.avatar-pic {
+    width: 133px;
+    height: 133px;
+    border: 4px solid #669966;
+    border-radius: 50%;
+}
+
+.comment-text {
+    margin-top: 10px;
+}
+
+.comments a {
+color: #c4082f;
+}
+
+.comment-text p {
+    line-height: 20px;
+}
+
+
+
+/*blog*/
+.blog {
+    background-image: url(../img/blog-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: fixed; */
+    background-attachment: fixed;
+}
+
+.article img {
+    width: 100%;
+    height: 308px;
+}
+.article {
+    /* border: 4px solid #fff; */
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 5px 3px #a5a5a5e3;
+    transition: all .7s;
+}
+
+.article:hover .place-info h1{
+    color: #c4082f;
+}
+
+.article:hover{
+    border-bottom: 4px solid #c4082f
+
+}
+
+/*why-adventure*/
+.w-adventure {
+    /* background-image: url(../img/blog-bg.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: fixed; */
+    background-attachment: fixed;
+}
+
+.adventure img {
+    width: 30%;
+    display: block;
+    margin: 20px auto;
+}
+
+.adventure {
+    /* border: 4px solid #fff; */
+    border-radius: 2px;
+    /* background: #fff; */
+    /* box-shadow: 0 0 5px 3px #a5a5a5e3; */
+    transition: all .7s;
+}
+
+.adventure:hover .adventure-info h1{
+    color: #c4082f;
+}
+
+.adventure:hover{
+    background:  #c4082f
+
+}
+
+.adventure-info h2{
+    font-size: 13px;
+}
+
+
+/* footer */
+footer {
+    padding-top: 50px;
+    background: #000;
+    border-top: 4px solid #eba022;
+    color: #fff;
+}
+footer p, a, li, ul {
+    color: #fff;
+}
+footer ul li:before{
+    content: "\2022";
+    color: #eba022;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    font-size: 21px;
+}
+footer .contact{
+    color: #eba022;
+
+}
+img.foot-btn {
+    width: 195px;
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+.copy-right {
+    background: #1a1a1a;
+    padding: 10px;
+}
+
+.copy-right span {
+    /* text-align: center; */
+    display: inline-block;
+    width: 100%;
+    /* margin: 0 auto; */
+}

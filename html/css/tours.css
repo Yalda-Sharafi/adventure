@@ -1,0 +1,82 @@
+.category-banner{
+width: 100%;
+height: 800px;
+}
+.tour-wrapper {
+    box-shadow: 0 0 5px 3px #a5a5a5e3;
+    border: 5px solid #f7f1f1;
+    transition: all.5s
+}
+.tour-wrapper:hover {
+    box-shadow: 0 0 5px 5px #a5a5a5e3;
+    border-bottom: 5px solid #c4082f;
+}
+.tour-wrapper:hover .info p{
+    color: #c4082f;
+}
+.tours-page-header {
+    text-align: center;
+    width: 100%;
+}
+.tour-page-content {
+    width: 100%;
+    text-align: center;
+}
+p.tour-archive-text {
+    text-align: center;
+}
+.tour-header {
+    position: relative;
+    height: 375px;
+    width: 100%;
+}
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #fbfbfb00, #212020);
+}
+.tour-header h1 {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    color: #fff;
+}
+
+.tour-footer {
+    background: #fff;
+    width: 100%;
+    flex-flow: column;
+}
+
+.info{
+    padding: 10px 0;
+}
+.info h6 {
+    font-weight: bold;
+}
+.info p {
+    margin-bottom: 0;
+    padding: 0;
+}
+.info h6, .info p {
+    text-align: center;
+}
+
+.view-btn a {
+    border-radius: 27px;
+    margin-top: 2px;
+    border: 2px solid #c4082f;
+    color: #c4082f;
+    padding: 7px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.tour-wrapper {
+    box-shadow: 0 0 5px 3px #a5a5a5e3;
+    border: 5px solid #f7f1f1;
+    transition: all.5s;
+    margin: 20px 0;
+}

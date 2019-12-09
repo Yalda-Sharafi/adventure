@@ -1,0 +1,9 @@
+<?php
+get_header();
+get_template_part('partial/slider');
+get_template_part('partial/section1');
+get_template_part('partial/section2');
+get_template_part('partial/section3');
+get_template_part('partial/section4');
+get_template_part('partial/section5');
+get_footer();
