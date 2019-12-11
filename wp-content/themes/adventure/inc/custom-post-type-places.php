@@ -57,7 +57,7 @@ add_action( 'init', 'create_places_taxonomy' );
 function create_places_taxonomy() {
     // Add new taxonomy, make it hierarchical (like categories)
     $labels = array(
-        'name' => _x( 'place', 'taxonomy general name' ),
+        'name' => _x( 'place category', 'taxonomy general name' ),
         'singular_name' => _x( 'Topic', 'taxonomy singular name' ),
         'search_items' =>  __( 'Search place' ),
         'all_items' => __( 'All place' ),
@@ -67,7 +67,7 @@ function create_places_taxonomy() {
         'update_item' => __( 'Update Topic' ),
         'add_new_item' => __( 'Add New Topic' ),
         'new_item_name' => __( 'New Topic Name' ),
-        'menu_name' => __( 'place' ),
+        'menu_name' => __( 'place category' ),
     );
     $args = array(
         'hierarchical'      => true,
@@ -75,9 +75,9 @@ function create_places_taxonomy() {
         'show_ui'           => true,
         'show_admin_column' => true,
         'query_var'         => true,
-        'rewrite'           => array( 'slug' => 'places' ),
+        'rewrite'           => array( 'slug' => 'places-tax' ),
     );
-    register_taxonomy( 'places', array( 'places' ), $args );
+    register_taxonomy( 'places-tax', array( 'places' ), $args );
 
 
 

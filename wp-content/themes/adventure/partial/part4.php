@@ -17,11 +17,11 @@ if($posts){
                             <div class="article">
                                 <?php echo get_the_post_thumbnail(); ?>
                                 <div class="article-info">
-                                    <h1 class="th1 pl-3">autumn</h1>
-                                    <h2 class="th2 pl-3">We specialise in stylish and original small group tours and
-                                        tailor-made holidays
-
-                                    </h2>
+                                    <h3 class="th2 pl-3"><?php the_title(); ?></h1>
+                                    <p class="th4 pl-3">
+                                        
+                                    <?php echo wp_trim_words( get_the_content(), 15, '...' ); ?>
+  </p>
                                 </div>
                                 <!--article-info-->
                             </div>

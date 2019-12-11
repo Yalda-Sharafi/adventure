@@ -74,9 +74,9 @@ function create_tours_taxonomy() {
         'show_ui'           => true,
         'show_admin_column' => true,
         'query_var'         => true,
-        'rewrite'           => array( 'slug' => 'tours' ),
+        'rewrite'           => array( 'slug' => 'tours-tax' ),
     );
-    register_taxonomy( 'tours', array( 'tours' ), $args );
+    register_taxonomy( 'tours-tax', array( 'tours' ), $args );
 
 
 

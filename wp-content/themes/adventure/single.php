@@ -27,7 +27,7 @@ if(has_post_thumbnail()){
 </div>
 
     <!--/*****************************content-page*************************/-->
-    <div class="container-fluid my-page">
+    <div class="container my-page">
 
         <div class="row single-page">
 
@@ -36,7 +36,7 @@ if(has_post_thumbnail()){
                     <?php if (have_posts()) : while (have_posts()) : the_post();?>
 
                     <div class="page-title col-12">
-                        <h2 class="cat-title"><?php the_title(); ?> </h2>
+                        <h1 class="cat-title th1"><?php the_title(); ?> </h1>
 
                     </div>
 
@@ -51,12 +51,8 @@ if(has_post_thumbnail()){
                         </div>
 
                         <div class="post-option col-xs-12 col-md-12">
-                            <date> <i class="far fa-calendar-alt"></i> <?php echo get_the_date( 'Y-m-d' );  ?> </date>
-                                              
-                                                <span class="post-code">   <i class="fas fa-file-alt" aria-hidden="true"></i>  <?php _e('post code');  echo get_the_ID(); ?> </span>
-                           
-<span class="post-view">   <i class="far fa-eye"></i></i> <?php _e('view');  ?>
-                                             <?php  echo getPostViews(get_the_ID()); ?></span>
+                        <?php get_template_part('partial/postoption') ?>
+
                         </div>
 
 
@@ -75,10 +71,10 @@ if(has_post_thumbnail()){
                 </div>
             </div>
             <div class="d-none d-xs-none d-md-block col-md-3">
-                <div class="content-sidebar page-sidebar">
-                    <?php dynamic_sidebar('سایدبار آرشیو'); ?>
+                   
+            <?php get_template_part('partial/archive-sidebar');  ?>
 
-                </div>
+
             </div>
         </div>
     </div>

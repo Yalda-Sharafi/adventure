@@ -19,9 +19,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <title> <?php echo bloginfo(); ?> </title>
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link href="https://fonts.googleapis.com/css?family=Gupter&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: 'Gupter', serif;
+        font-size: 48px;
+      }
+    </style>
 <?php wp_head(); ?>
+
 </head>
 <body <?php body_class(); ?>>
+
+
     <header>
         <div class="top-header">
             <div class="container">

@@ -18,20 +18,13 @@ if($posts){
 
 ?>
 
-
-
-
-
-
-
-
                         <!-- /*repeat*/ -->
                         <div class="col-xs-1 col-sm-6 col-md-4">
                         <a href="<?php echo get_post_permalink() ?>" title="adventure tour" >
                             <div class="tour" style="background:url('<?php echo get_the_post_thumbnail_url() ?>')">
                                 <div class="tour-info">
-                                    <h1 class="th3 mb-3">SKI</h1>
-                                    <h2 class="th4">Experience Iran with us</h2>
+                                    <h1 class="th3 mb-3"><?php the_title() ?></h1>
+                                    <h2 class="th4"><?php echo wp_trim_words( get_the_content(), 15, '...' ); ?></h2>
                                 </div>
                                 <!--tour-info-->
                             </div>

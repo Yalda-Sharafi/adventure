@@ -17,12 +17,14 @@ if($posts){
                         <a href="<?php echo get_the_permalink();?>" title="adventure-link" >
                             <div class="adventure">
                                 <div class="adventure-img"> 
+                                    
                                 <?php echo get_the_post_thumbnail(); ?>
                                 </div>
                                 <div class="adventure-info">
                                     <h1 class="th1  text-center"><?php the_title(); ?></h1>
-                                    <h2 class="th2 text-center">We specialise in stylish and original small group tours
-                                        and tailor-made holidays
+                                    <h2 class="text-center">
+                                        
+                                    <?php echo wp_trim_words( get_the_content(), 15, '...' ); ?>
 
                                     </h2>
                                 </div>
@@ -46,7 +48,7 @@ if($posts){
             </div>
             <!--container-->
         </div>
-        <!--blog-->
+        <!--w-adventure-->
 
 
     </main>

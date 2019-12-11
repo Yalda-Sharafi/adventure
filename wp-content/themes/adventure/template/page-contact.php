@@ -16,11 +16,7 @@ if(has_post_thumbnail()){
 </div>
 
     <!--/*****************************bradcrumb*************************/-->
-    <div class="breadcrumb-wrapper">
-<div class="container">
-        <?php the_breadcrumb(); ?>
-</div><!--container-->
-    </div>
+    <?php get_template_part('partial/breadcrumb'); ?>
 
 <div class="my_page my_page_contact">
     <?php if (have_posts()) : while (have_posts()) : the_post();?>
@@ -28,67 +24,95 @@ if(has_post_thumbnail()){
     <!--/*****************************content-page*************************/-->
     <div class="contact-page">
         <div class="container">
-
+        <h1 class="th1">
+                     <?php the_title(); ?>
+                    </h1>
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <h1 class="th1">
-                        اطلاعات تماس با آروند
-                    </h1>
-                    <div class="company-contact">
-                        
-
-                        <p>
-                            <i class="fas fa-phone"></i>
-                            <?php echo get_theme_mod('phone1'); ?>
-                        </p>
-                        <p>
-                            <i class="fas fa-fax"></i>
-                            <?php echo get_theme_mod('fax'); ?>
-                        </p>
-                        <p>
-                            <i class="fas fa-mobile-alt"></i>
-                            <?php echo get_theme_mod('mobile'); ?>
-                        </p>
-
-                        
-
-                        <p>
-                            <i class="far fa-envelope"></i>
-                            <?php echo get_theme_mod('email'); ?>
-                        </p>
-
-                        <p>
-                            <i class="fas fa-globe-americas"></i>
-                            <?php echo get_theme_mod('site'); ?>
-                        </p>
-                        <p>
-
-                            <i class="fas fa-home"></i>
-                            <?php echo get_theme_mod('company_address'); ?>
-                        </p>
-
+                    <div class="contact-form">
+                    <?php echo do_shortcode('[gravityform id="1" title="true" description="true"]') ?>
                     </div>
-                    <!--company-contact-->
+                   
                 </div>
                 <!--col1-->
 
                 <div class="col-xs-12 col-md-6">
-                    <h1 class="th1">
-                        با ما در ارتباط باشید ...
-                    </h1>
-                    <div class="contact-form-wrapper">
+                    <!-- /map/ -->
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d680.6246385729801!2d51.432210281874575!3d35.760275121098054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfa!2snl!4v1572437720536!5m2!1sfa!2snl"
+                        width="100%"
+                        height="350"
+                        frameborder="0"
+                        style="border:0;"
+                        allowfullscreen="">
+                        </iframe>
 
-                        <?php echo do_shortcode( '[contact-form-7 id="112" title="contact-form1"]' ) ?>
                     </div>
-                    <!--contact-form-wrapper-->
+    <!--map-->
+
+    <div class="company-contact">
+                        
+<div class="row">
+    <div class="col-4">
+                        <!-- <p>
+                        <span class="dashicons dashicons-phone"></span>-->
+                            <!-- <?php echo get_theme_mod('phone1'); ?> -->
+                        <!-- </p>
+                        <p> -->
+                        <!-- <span class="dashicons dashicons-phone"></span> -->
+                            <!-- <?php echo get_theme_mod('fax'); ?> -->
+                        <!-- </p>  -->
+
+
+                        <p>
+                        <span class="dashicons dashicons-smartphone"></span>
+                            <?php echo get_theme_mod('mobile'); ?>
+                        </p>
+
+</div> <!--col-4-->  
+<div class="col-4">
+                        <p>
+                        <span class="dashicons dashicons-email"></span>
+                            <?php echo get_theme_mod('email'); ?>
+                        </p>
+</div> <!--col-4-->
+<div class="col-4">
+                        <p>
+                        <span class="dashicons dashicons-admin-site"></span>
+                            <?php echo get_theme_mod('site'); ?>
+                        </p>
+                       
+</div><!--col-4-->
+<div class="col-12">
+<p>
+
+<span class="dashicons dashicons-admin-home"></span>
+    <?php echo get_theme_mod('company_address'); ?>
+</p>
+</div>
+</div> <!--row-->
+                    </div>
+                    <!--company-contact-->
 
                 </div>
                 <!--col2-->
 
                 <div class="col-12">
 
+
     <div class="content">
+        <div class="row">
+        <div class="col-10">
         <?php the_content(); ?>
+</div> <!--col10-->
+
+<div class="col-2">
+<a href="<?php echo get_theme_mod('inquire'); ?>" class="btn-theme contact-inquire"> inquire now </a>
+ </div> 
+<!--col-2-->
+</div> <!--row-->
+
     </div>
     <!--content-->
     <div>
@@ -115,18 +139,7 @@ if(has_post_thumbnail()){
 
     </div>
 
-    <!-- /map/ -->
-    <div class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d680.6246385729801!2d51.432210281874575!3d35.760275121098054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfa!2snl!4v1572437720536!5m2!1sfa!2snl"
-            width="100%"
-            height="350"
-            frameborder="0"
-            style="border:0;"
-            allowfullscreen=""></iframe>
-
-    </div>
-    <!--map-->
+    
 
 </div>
 <!--my-page-->
